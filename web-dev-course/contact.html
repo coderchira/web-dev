@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Cupcake Store</title>
+    <script data-require="jquery@1.9.1" data-semver="1.9.1" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <link data-require="bootstrap@3.3.1" data-semver="3.3.1" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+    <link data-require="bootswatch@3.3.5-flatly" data-semver="3.3.5-flatly" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.5/flatly/bootstrap.min.css" />
+    <script data-require="bootstrap@3.3.1" data-semver="3.3.1" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js">
+    </script>
+    <script>
+       
+        function initialize() {
+            var mapProp = {
+                center: new google.maps.LatLng(18.586, 73.7346),
+                zoom: 5,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("map"), mapProp);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+ 
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><h3>The Bakery Shop</h3></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-2">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">
+                            <h4> Menu</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html"><h4>About</h4></a>
+                    </li>
+                    <li class="active">
+                        <a href="contact.html"><h4>Contact</h4><span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="row container-fluid well">
+        <div class="col-md-4">
+            <div id="map" style="width:350px;height:380px;"></div>
+        </div>
+        <div class="col-md-8">
+            <form class="form-horizontal">
+                <fieldset>
+                    <legend>We would love to hear from you!</legend>
+                    <div class="form-group">
+                        <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="inputEmail" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="textArea" class="col-lg-2 control-label">Query</label>
+                        <div class="col-lg-10">
+                            <textarea class="form-control" rows="3" id="textArea" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-lg-10 col-lg-offset-2">
+                            <button type="reset" class="btn btn-default">Cancel</button>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <div class="row well">
+
+        <footer class="text-center">&copy; 2016, <a href="index.html">The Cupcake Store</a></footer>
+    </div>
+</body>
+</html>
