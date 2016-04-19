@@ -96,6 +96,11 @@
   <ItemGroup>
     <Content Include="about.html" />
     <Content Include="contact.html" />
+    <Content Include="images\bakery-shop-poster_23-2147507690.jpg" />
+    <Content Include="images\cupcake-doily-lace_23-2147508096.jpg" />
+    <Content Include="images\delicious-cupcake_23-2147507138.jpg" />
+    <Content Include="images\halloween-cupcake_23-2147519790.jpg" />
+    <Content Include="images\vintage-cupcake-poster_23-2147509238.jpg" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -116,6 +121,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
